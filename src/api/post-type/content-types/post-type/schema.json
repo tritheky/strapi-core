@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_types",
+  "info": {
+    "singularName": "post-type",
+    "pluralName": "post-types",
+    "displayName": "PostType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}
