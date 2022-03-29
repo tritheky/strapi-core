@@ -22,16 +22,10 @@
       "relation": "oneToOne",
       "target": "api::post-type.post-type"
     },
-    "image_url": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "medium": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::medium.medium"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mediums",
+  "info": {
+    "singularName": "medium",
+    "pluralName": "mediums",
+    "displayName": "medium"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
