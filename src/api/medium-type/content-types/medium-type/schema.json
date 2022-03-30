@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medium_types",
+  "info": {
+    "singularName": "medium-type",
+    "pluralName": "medium-types",
+    "displayName": "medium-type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    }
+  }
+}

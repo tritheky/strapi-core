@@ -4,7 +4,8 @@
   "info": {
     "singularName": "medium",
     "pluralName": "mediums",
-    "displayName": "medium"
+    "displayName": "medium",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,6 +18,11 @@
     },
     "name": {
       "type": "string"
+    },
+    "medium_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::medium-type.medium-type"
     }
   }
 }
