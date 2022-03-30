@@ -44,7 +44,6 @@ module.exports = createCoreController('api::medium.medium', ({
             }
         });
         const entries = await strapi.entityService.findMany('api::medium-type.medium-type', {
-            fields: ['id'],
             filters: { code: newMedium.type_code },
         });
         if (!entries || entries.length == 0)
