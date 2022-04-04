@@ -1539,7 +1539,7 @@
     "lodash.deburr" "^4.1.0"
 
 "@strapi/admin@4.1.7":
-  "integrity" "sha512-HJxN3ZmaaxQAl/jjemkjVQFJE0B0fxwHBKunsGMnEBNEL9alIyWt8iBzOGdoc+80rMhY1VcmOEa3ABaM52Hr0g=="
+  "integrity" "sha512-ZHM9+SIgobC2uEoq5RGWOHJg2DLrdJbUR++X2n2dUWmQkW0Imf01pMaCB2v1RZmNhGhHMtN+jr4kVJapGZTt6A=="
   "resolved" "https://registry.npmjs.org/@strapi/admin/-/admin-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1644,12 +1644,12 @@
     "yup" "^0.32.9"
 
 "@strapi/babel-plugin-switch-ee-ce@4.1.7":
-  "integrity" "sha512-TQu21a34bDaBdxBcoTsL4V/iUGJKMSPE2A9G9UYIVFE6hgzJv9jcYflDI6rs0IH5nkoKbNbpAyJU5ND2kaLamw=="
+  "integrity" "sha512-pwdWB3tD9UCripJ81PSmgWPB3DORKeML9lWaxK+c25S6pfTTIBsV62EzJJyBVnV0LthV7JWy+f8bLfJGE8h7Xw=="
   "resolved" "https://registry.npmjs.org/@strapi/babel-plugin-switch-ee-ce/-/babel-plugin-switch-ee-ce-4.1.7.tgz"
   "version" "4.1.7"
 
 "@strapi/database@4.1.7":
-  "integrity" "sha512-bsSGbpjJZ8Sbj+9OEF5njjiqZ2RM4ZAl9BepApOUhBtln5oMokgdZX1wW02A03TJe0l/sfPIqWS0Za0h3CZp3w=="
+  "integrity" "sha512-rBrHds3C8RDpUWotwzpusuYgB8rJzwUowov/hxvY2jUOWbn+dZ3tRRd35BtI//OHhACHmNGuJNWAPjs/KIimiA=="
   "resolved" "https://registry.npmjs.org/@strapi/database/-/database-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1670,7 +1670,7 @@
     "prop-types" "^15.7.2"
 
 "@strapi/generate-new@4.1.7":
-  "integrity" "sha512-zl0veo1M/6HpUYrZmr1goqJ79lLYNcz+1kBdO2fK/ZNQYj+dEq6nIgb7k4Fg/2lxyK9WqkZmAvkGu67iGjMZZg=="
+  "integrity" "sha512-Ed2D7KMmNZWYpyIhhA/shfH1zb6ljBUFm0XtL6IeqgBlx7xlT1GY9jbCmG09/gb7yBerSLfI6okZnfFlPi0Icg=="
   "resolved" "https://registry.npmjs.org/@strapi/generate-new/-/generate-new-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1687,7 +1687,7 @@
     "uuid" "^3.3.2"
 
 "@strapi/generators@4.1.7":
-  "integrity" "sha512-oVLX3iQx7DNa9i11MDdWPZ+Unq5c7kq5ZN2d6+uFB7bTE7ZWbWj7/JAUCorP9t54j8LgrmFAFDQrscfuE2Cu1A=="
+  "integrity" "sha512-wxtKK90OuZIMk/xAphmdQ9FkkY5mlZ444YziavrSZTCVetNW5+OinrQ41oow8Hf/4bdmkHSGxJsCP6c5ZyNT+w=="
   "resolved" "https://registry.npmjs.org/@strapi/generators/-/generators-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1699,8 +1699,35 @@
     "plop" "2.7.6"
     "pluralize" "8.0.0"
 
+"@strapi/helper-plugin@4.1.5":
+  "integrity" "sha512-Pog53h0W+dgA+QjZpcrPgtt+hkBcRx9LYJ/CAW+BMCtqnqP0qcqQFtP5xPPxSJCkkmPX4GJT3XRWJUnjdPEq/A=="
+  "resolved" "https://registry.npmjs.org/@strapi/helper-plugin/-/helper-plugin-4.1.5.tgz"
+  "version" "4.1.5"
+  dependencies:
+    "@fortawesome/fontawesome-free" "^5.15.2"
+    "@fortawesome/fontawesome-svg-core" "^1.2.35"
+    "@fortawesome/free-brands-svg-icons" "^5.15.2"
+    "@fortawesome/free-solid-svg-icons" "^5.15.3"
+    "@fortawesome/react-fontawesome" "^0.1.14"
+    "axios" "0.25.0"
+    "babel-plugin-styled-components" "2.0.2"
+    "formik" "2.2.9"
+    "invariant" "^2.2.1"
+    "lodash" "4.17.21"
+    "match-sorter" "^4.0.2"
+    "mini-css-extract-plugin" "2.4.4"
+    "moment" "^2.29.1"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+    "react-helmet" "^6.1.0"
+    "react-intl" "5.20.2"
+    "react-router" "^5.2.0"
+    "react-router-dom" "5.2.0"
+    "styled-components" "^5.2.3"
+    "whatwg-fetch" "^3.6.2"
+
 "@strapi/helper-plugin@4.1.7":
-  "integrity" "sha512-GQW1xH9wu1f6nDS3eLpmG+hC5dYjsXK/Zvbqn3cMLN5WQhDgjwIqziohDNaXdqJSyJ64a+6CofPNwb1upTEHZQ=="
+  "integrity" "sha512-grQp7u/RWraZ7nPRRNIlqKVL5ioRARACqSqPus7vJ55fvL8OhMPI697WR8IqryHt+SS/vNLDJgQHS0J+Tgai/g=="
   "resolved" "https://registry.npmjs.org/@strapi/helper-plugin/-/helper-plugin-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1734,7 +1761,7 @@
     "rimraf" "^3.0.2"
 
 "@strapi/logger@4.1.7":
-  "integrity" "sha512-Wb1btxyRqQ5VZePzpatXS0qtue7wdNuCq5OB96LB65Uq4mtXI66g3tenq6lyCGHwNzMZRdlAHrzGssHYyK8wmA=="
+  "integrity" "sha512-7n3pguQmUrr3lXd0ebAi+V5zpae4uY2UkWj4XSDdUfDfTZb15fbe2FMKSlSbC4W60H4C3A15eM8aTgfwL/0Nyw=="
   "resolved" "https://registry.npmjs.org/@strapi/logger/-/logger-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1742,7 +1769,7 @@
     "winston" "3.3.3"
 
 "@strapi/plugin-content-manager@4.1.7":
-  "integrity" "sha512-6Nxx3JNd6vIeLP25H0KIkh/Qwm8Vc5kBI7hqkD+p4SwK1XL7JEjHlgBDzkFY2uNGFUiEI6VKb6NPQnySHXDWzw=="
+  "integrity" "sha512-GRCAVqCyx8evQ+QmpDMMbwDGzFHIiqbjXEDKVTpb4UFSIVC/KxtrEfdqkngZYYoT/T/46IFxSf/hwH3TfGnFOw=="
   "resolved" "https://registry.npmjs.org/@strapi/plugin-content-manager/-/plugin-content-manager-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1751,7 +1778,7 @@
     "lodash" "4.17.21"
 
 "@strapi/plugin-content-type-builder@4.1.7":
-  "integrity" "sha512-UMHei9ND66HrdFi7nkMdi7OecYB3DURMpmNr9UnakLTgY446y2VbAPstHKJlc3Rh7HojqEae+MhCwJXgfQ0DSw=="
+  "integrity" "sha512-oZiIGkEJX5QvMrDWcA9J4btr4W7LjjVpmJSexi5OwrIGV2WEOf65NW5mqvMtzDJNAvFpxfP2zR4Ll8iAu4CK9A=="
   "resolved" "https://registry.npmjs.org/@strapi/plugin-content-type-builder/-/plugin-content-type-builder-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1773,7 +1800,7 @@
     "yup" "^0.32.9"
 
 "@strapi/plugin-email@4.1.7":
-  "integrity" "sha512-vRp7LIFW922SjNgBzF2WrRW2YUaby+Iw++2/tWdmwWIjgcZm1tfqinF0QRHLV2Df/j5syHbMxe1y60poWXDzsg=="
+  "integrity" "sha512-mkDL+loq6NktHrwI2rSvzPGiUqnjYl8p8XcMfKDInkHWQ/HDMNoyiDjlJ0qfj0PzO72mg8olMj/c0VyX7JYo7Q=="
   "resolved" "https://registry.npmjs.org/@strapi/plugin-email/-/plugin-email-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1815,7 +1842,7 @@
     "lodash" "4.17.21"
 
 "@strapi/plugin-upload@4.1.7":
-  "integrity" "sha512-XowbAknXYlO7GAA0V6zO9ZS/J0KpOiXnwBEflZ1+aapr7gRz3r6PY+oSwZLaF4GImG3tcm4meuCOkkMScAKzVw=="
+  "integrity" "sha512-j99+oWWtVihECtXtUsfxnQ9amcVtqtKDvY6fMglGntMReVJDsqgt0kmggl3hNa/B62zYgTPi/JjKQaGP3VSu9Q=="
   "resolved" "https://registry.npmjs.org/@strapi/plugin-upload/-/plugin-upload-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1864,7 +1891,7 @@
     "uuid" "^3.1.0"
 
 "@strapi/provider-email-sendmail@4.1.7":
-  "integrity" "sha512-EBWCiYjftllE537ocHioOVoJyyHiiG/z2K1hVUhnvuiUIQBvMK0tCboqkWZMXcOmg73lASwxjtMERqzhs0G/Zw=="
+  "integrity" "sha512-9ON/sCkxxPPDG3mKFDnFczx6zMAaG4UwbVg/Qgm8BZr69LH3CzTtgYHPKzbC6pLv2tvkZdy4RJUG/GdbPwd7ww=="
   "resolved" "https://registry.npmjs.org/@strapi/provider-email-sendmail/-/provider-email-sendmail-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1881,7 +1908,7 @@
     "into-stream" "^5.1.0"
 
 "@strapi/provider-upload-local@4.1.7":
-  "integrity" "sha512-N3N6+YhNWypbIFYXpeyW7bkTuVGZ5YKbxZ74gDWRwXW7PLnNmb30Fg94JVEB2F6SlJzEMdLStDIZuYyQ+lIjhA=="
+  "integrity" "sha512-GW1I7b1bcyn0ryuTQ1Rp7mIK1TZBJrn1+UUURoblt/v42Ohf7di9aayHot0GQWmQoxauSLKoQKw0+H90F+1qIg=="
   "resolved" "https://registry.npmjs.org/@strapi/provider-upload-local/-/provider-upload-local-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1889,7 +1916,7 @@
     "fs-extra" "10.0.0"
 
 "@strapi/strapi@^4.0.0", "@strapi/strapi@4.1.7":
-  "integrity" "sha512-h73yo5z/wq7KPHbWcpvd52xXzYmo5OQqtp8wY3YQzOh0voy34XcHOD2apg9/AAx9LxkaSfo92OMMvkD5/QFo2w=="
+  "integrity" "sha512-iBM/rD52vBqTMLrFy/CP0KPBXxZLojX3jwnWJmPSQE5xCoQH1G8DkmunWaVuaTFmglRdz8vL2mkvTJ+nASbFBA=="
   "resolved" "https://registry.npmjs.org/@strapi/strapi/-/strapi-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -1944,8 +1971,19 @@
     "statuses" "2.0.1"
     "uuid" "^3.3.2"
 
+"@strapi/utils@4.1.5":
+  "integrity" "sha512-Oz7ur7TsoqA4IOPdk6H3YwsVZ+FOi9wp+iRReKao8yfo4YKJjSYlHQlNXUaAqOOlFnT0ol7G3KF+uF8jLcfxDA=="
+  "resolved" "https://registry.npmjs.org/@strapi/utils/-/utils-4.1.5.tgz"
+  "version" "4.1.5"
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    "date-fns" "2.24.0"
+    "http-errors" "1.8.0"
+    "lodash" "4.17.21"
+    "yup" "0.32.9"
+
 "@strapi/utils@4.1.7":
-  "integrity" "sha512-Qxxh3+JaBC2MnYG/IZVMMqVGJO/TIGzKZdVJv4ZCC07hKUuZHnRgnEEGGqMIQHfXF5VJBqlKdkzkdDJldSBxRw=="
+  "integrity" "sha512-QVuxGKHw9uh72CwtpKJTPz5ECgFBbtydvUjY34PCZMPkJ0EQ7/spz3KZbB+v2JSPgy1apZJn5qkBGFcvSvBxRw=="
   "resolved" "https://registry.npmjs.org/@strapi/utils/-/utils-4.1.7.tgz"
   "version" "4.1.7"
   dependencies:
@@ -5548,7 +5586,7 @@
     "p-cancelable" "^2.0.0"
     "responselike" "^2.0.0"
 
-"graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.0", "graceful-fs@^4.2.2", "graceful-fs@^4.2.4", "graceful-fs@^4.2.6", "graceful-fs@^4.2.9":
+"graceful-fs@^4.1.2", "graceful-fs@^4.1.7", "graceful-fs@^4.2.0", "graceful-fs@^4.2.2", "graceful-fs@^4.2.4", "graceful-fs@^4.2.6", "graceful-fs@^4.2.9":
   "integrity" "sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ=="
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz"
   "version" "4.2.9"
