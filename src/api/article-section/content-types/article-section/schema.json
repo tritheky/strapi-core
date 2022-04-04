@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_sections",
+  "info": {
+    "singularName": "article-section",
+    "pluralName": "article-sections",
+    "displayName": "article-section"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::article.article",
+      "inversedBy": "article_sections"
+    },
+    "thumnail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::medium.medium"
+    }
+  }
+}

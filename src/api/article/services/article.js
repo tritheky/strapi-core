@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * post-type service.
+ * article service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::post-type.post-type');
+module.exports = createCoreService('api::article.article');
