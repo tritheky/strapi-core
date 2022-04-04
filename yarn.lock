@@ -1913,7 +1913,7 @@
     "@strapi/utils" "4.1.6"
     "fs-extra" "10.0.0"
 
-"@strapi/strapi@^4.0.0", "@strapi/strapi@4.1.6":
+"@strapi/strapi@^4.0.0", "@strapi/strapi@4.1.7":
   "integrity" "sha512-iBM/rD52vBqTMLrFy/CP0KPBXxZLojX3jwnWJmPSQE5xCoQH1G8DkmunWaVuaTFmglRdz8vL2mkvTJ+nASbFBA=="
   "resolved" "https://registry.npmjs.org/@strapi/strapi/-/strapi-4.1.6.tgz"
   "version" "4.1.6"
