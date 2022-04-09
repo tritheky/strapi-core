@@ -30,6 +30,7 @@
     "redux": "^4.1.2",
     "sharp": "^0.30.3",
     "sqlite3": "^4.2.0",
+    "strapi-utils": "^3.6.8",
     "webpack": "^5.71.0"
   },
   "author": {
