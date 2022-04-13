@@ -21,7 +21,7 @@
       "required": true
     },
     "body": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
     "category": {
