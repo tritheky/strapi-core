@@ -12,7 +12,7 @@ module.exports = createCoreController('api::article.article', ({
         const transacting = await strapi.db.connection.transaction();
         const data = ctx.request.body.data;
         try {
-            data['article_sections'] = [];
+            data['article_sections'] = [];  
             for (let index = 0; index < data.sections.length; index++) {
                 const element = data.sections[index];
                 const resultSection = await strapi.db.query('api::article-section.article-section')
