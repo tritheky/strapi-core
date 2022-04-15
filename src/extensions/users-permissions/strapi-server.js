@@ -5,7 +5,6 @@ module.exports = (plugin) => {
     plugin.controllers.user.refreshToken = async (context) => {
         const { token } = context.request.body;
         const payload = jwt.decode(token);
-        console.log(payload)
         return getService('jwt').issue({
             id: payload.id
         })
