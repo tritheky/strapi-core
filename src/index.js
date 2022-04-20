@@ -66,5 +66,17 @@ module.exports = {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) { },
+  bootstrap({ strapi }) {
+    module.exports = () => {
+      var io = require('socket.io')(strapi.server, {
+          cors: {
+            origin: "*",
+            methods: ["GET", "POST"],
+            allowedHeaders: "*",
+            credentials: true
+          }
+      });
+      strapi.io = io;
+    };
+   },
 };
