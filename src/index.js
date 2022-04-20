@@ -1,7 +1,7 @@
 'use strict';
 
 const { ArticleInputType } = require("./api/article/content-types/article/inputTypes");
-const { resolveArticles, resolveUpdateArticles } = require("./api/article/content-types/article/resolve");
+const { resolveArticles, resolveUpdateArticles, resolveUpdateStatus } = require("./api/article/content-types/article/resolve");
 
 module.exports = {
   /**
@@ -12,11 +12,22 @@ module.exports = {
    */
   register({ strapi }) {
     const extensionService = strapi.plugin("graphql").service("extension");
-    const { toEntityResponse } = strapi.plugin('graphql').service('format').returnTypes;
     const extension = ({ nexus }) => {
       const ArticleInputTypeInstance = ArticleInputType(nexus);
       return {
-        types: [
+        types: [  
+          nexus.extendType({
+            type: 'Mutation',
+            definition: (t) => {
+              t.field("UpdateStatusMutation", {
+                type: 'ArticleEntityResponse',
+                args: { ids: nexus.list('ID') },
+                async resolve(parent, args) {
+                  return resolveUpdateStatus(parent, args)
+                }
+              })
+            }
+          }),
           nexus.extendType({
             type: 'Mutation',
             definition: (t) => {
@@ -28,7 +39,7 @@ module.exports = {
                 }
               })
             }
-          }),
+          }),  
           nexus.extendType({
             type: 'Mutation',
             definition: (t) => {

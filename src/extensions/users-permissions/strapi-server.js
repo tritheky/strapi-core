@@ -4,7 +4,8 @@ const jwt = require('jsonwebtoken');
 module.exports = (plugin) => {
     plugin.controllers.user.refreshToken = async (context) => {
         const { token } = context.request.body;
-        const payload = jwt.decode(token);
+        const payload = jwt.verify(token, process.env.JWT_SECRET);
+        console.log(payload)
         return getService('jwt').issue({
             id: payload.id
         })
