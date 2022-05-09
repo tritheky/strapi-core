@@ -1,7 +1,7 @@
 'use strict';
 
 const { ArticleInputType } = require("./api/article/content-types/article/inputTypes");
-const { resolveArticles, resolveUpdateArticles, resolveUpdateStatus } = require("./api/article/content-types/article/resolve");
+const { resolveArticles, resolveUpdateArticles, resolveUpdateStatus, resolveDeleteUser } = require("./api/article/content-types/article/resolve");
 
 module.exports = {
   /**
@@ -51,7 +51,19 @@ module.exports = {
                 }
               })
             }
-          })
+          }),
+          nexus.extendType({
+            type: 'Mutation',
+            definition: (t) => {
+              t.field("DeleteUser", {
+                type: 'UsersPermissionsUserEntity',
+                args: { id: nexus.nonNull('ID') },
+                async resolve(parent, args) {
+                  return resolveDeleteUser(parent, args)
+                }
+              })
+            }
+          }),
         ]
       }
 

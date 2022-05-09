@@ -57,3 +57,17 @@ exports.resolveUpdateStatus = async (parent, args) => {
     throw new Error(error)
   }
 }
+
+exports.resolveDeleteUser = async (parent, args) => {
+  const { toEntityResponse } = strapi.plugin('graphql').service('format').returnTypes;
+  const { id } = args;
+  const transacting = await strapi.db.connection.transaction();
+  try {
+    const result = await strapi.query('plugin::users-permissions.user').delete({ where: { id } }, { transacting });
+    await transacting.commit();
+    return toEntityResponse(result, { args, resourceUID: 'plugin::users-permissions.user' });
+  } catch (error) {
+    await transacting.rollback();
+    throw new Error(error)
+  }
+}
