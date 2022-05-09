@@ -3,12 +3,12 @@ const jwt = require('jsonwebtoken');
 
 module.exports = (plugin) => {
     plugin.controllers.user.refreshToken = async (context) => {
-        const { token } = context.request.body;
-        const payload = jwt.verify(token, process.env.JWT_SECRET);
-        console.log(payload)
-        return getService('jwt').issue({
-            id: payload.id
-        })
+        const { token, userId } = context.request.body;
+        if(token && userId) {
+            return getService('jwt').issue({
+                id: userId
+            })
+        }
     }
 
     plugin.routes['content-api'].routes.push({
